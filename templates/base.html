@@ -1,0 +1,15 @@
+<nav>
+    <a href="{% url 'home' %}">Home</a> |
+    <a href="{% url 'foodgroups' %}">Food Groups</a> |
+    <a href="{% url 'meals' %}">Meals</a> |
+    <a href="{% url 'snacks' %}">Snacks</a> |
+    <a href="{% url 'about' %}">About</a> 
+<nav>
+
+{% block content %}
+        
+<h1>This is the Default Template</h1>
+
+<p>This is where the content would go</p>
+
+{% endblock content %}
