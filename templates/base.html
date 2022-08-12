@@ -1,15 +1,36 @@
-<nav>
-    <a href="{% url 'home' %}">Home</a> |
-    <a href="{% url 'foodgroups' %}">Food Groups</a> |
-    <a href="{% url 'meals' %}">Meals</a> |
-    <a href="{% url 'snacks' %}">Snacks</a> |
-    <a href="{% url 'about' %}">About</a> 
-<nav>
+<!DOCTYPE html>
 
-{% block content %}
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <meta http-equiv = "X-UA-Compatible" content ="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snacks Project</title>
+</head>
+  <body>
+    <header>
+        <nav>
+            <a href="{% url 'home' %}">Home</a> |
+            <a href="{% url 'foodgroups' %}">Food Groups</a> |
+            <a href="{% url 'meals' %}">Meals</a> |
+            <a href="{% url 'snacks' %}">Snacks</a> |
+            <a href="{% url 'about' %}">About</a> 
+        <nav>
+    </header>
+        <main>
         
-<h1>This is the Default Template</h1>
+            {% block content %}
+            
+            <h1>This is the Default Template</h1>
 
-<p>This is where the content would go</p>
+            <p>This is where the content would go</p>
 
-{% endblock content %}
+            {% endblock content %}
+
+        </main>
+        <footer>
+            <p>Made by Jae</p>
+        </footer>
+
+  </body>
+</html>

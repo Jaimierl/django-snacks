@@ -58,3 +58,14 @@ class SnacksTest(SimpleTestCase):
         response = self.client.get(url)
         self.assertTemplateUsed(response,'snacks.html')
         self.assertTemplateUsed(response,'base.html')
+
+    # def test_expected_failure(self):
+    #     with self.assertRaises(NoReverseMatch):
+    #         url = reverse('contact-us')
+    #         response = self.client.get(url)
+    #         self.assertEqual(response.status_code,404)
+
+    # def mytest(self):
+    #     # Failure example, could not get it working.
+    #     with self.assertRaises(FooException):
+    #         thing = Thing(name="1234")
